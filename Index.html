@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal portfolio website of Christion Mushariwa</title>
+    <link rel="stylesheet" href="Style.css">
+    <script src="https://kit.fontawesome.com/7970bed18f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="./logo.png" alt="logo"><!--add company logo-->
+                <ul id="sidemenu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Software Engineer</p>
+            <h1>Hi, I'm <span>Christion</span><br> Mushariwa from Johannesburg.</h1><!--fix red highlight-->
+            </div>
+        </div>
+    </div>
+
+    <!-------------------------about------------------------>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./User.jpeg" > <!-- insert a user image jpeg or png -->
+
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>An aspiring Software Developer, I possess a proven track record in successfully handling complex assignments and meeting tight deadlines, showcasing strong problem-solving abilities. Comfortable working independently or within a team, I am adept at learning new skills and proficiently creating projects using modern technologies. My expertise includes software maintenance, refactoring, and staying updated with the latest technology and architecture. Seeking entry into the IT industry, I am a detail-oriented and ambitious software development student with excellent communication, time management, and networking skills. Currently pursuing a Bachelor of Science in Software Engineering, I am dedicated to advancing my career, contributing to technical teams, and continuously expanding my knowledge and skills.
+                        </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+                            <li><span>Web Development</span><br>Web App Development</li>
+                            <li><span>App Development</span><br>Building apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022</span><br>Bsc in Software Engineering</li>
+                            <li><span>2019</span><br>A-Level</li>
+                            <li><span>2017</span><br>O-level</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-------------------------------------Services-------------------------------------------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Skills</h1>
+        <div class="service-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Programming</h2>
+                <p>Over 5000 lines:
+                    <br> • Java • Javascript • Python • MySQL
+                    <br>
+                    <br> Less than a 1000 lines:
+                    <br> • C • C++ • PHP • Git
+                </p><!--Add details-->
+                <a href="#"></a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>Front-end Dev/Design</h2>
+                <p>Over 5000 lines:
+                    <br>• Javascript • CSS • HTML • React
+                    <br>
+                    <br>Less than a 1000 lines:
+                    <br>• Angular • Vue
+                </p><!--Add details-->
+                <a href="#"></a>
+            </div>
+            <!--<div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>Back-end Development </h2>
+                <p>Still Learning.
+                </p>
+                <a href="#"></a>
+            </div>--->
+        </div>
+    </div>
+</div>
+
+<!---------------------------------Portfolio----------------------------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="./Work 1.jpg">
+                <div class="layer">
+                    <h2>AI Image Generator<br>(React-Javascript-CSS)</h2>
+                    <p>AI image generators use advanced algorithms and deep learning to create diverse, realistic images by analyzing extensive datasets.
+                        With applications in various fields, AI image generators demonstrate the remarkable capabilities of artificial intelligence in producing original and captivating compositions.
+                    </p>
+                    <a href="https://github.com/ChristionMush/AI-Image-Generator.git"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="./Work 2.jpg">
+                <div class="layer">
+                    <h2>Task Management App<br>(Javascript-CSS-html)</h2>
+                    <p>This is a software tool that helps users organize, track, and prioritize their tasks or projects. These apps often include features such as to-do lists, deadlines, reminders, and collaboration capabilities for efficient teamwork.
+                    </p>
+                    <a href="https://github.com/ChristionMush/To-Do-List.git"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="./Work 3.jpg">
+                <div class="layer">
+                    <h2>Text to Voice Converter<br>(Javascript-CSS-html)</h2>
+                    <p> This software or system takes input text and uses synthetic voices to generate corresponding audible speech.
+                    </p>
+                    <a href="https://github.com/ChristionMush/Text-to-Speech-Converter.git"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <!---<a href="#" class="btn">See More</a>--->
+    </div>
+</div>
+
+<!---------------------------Contacts-------------------------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i>christionmushariwa@gmail.com</p>
+                <p><i class="fas fa-phone-square-alt"></i>+27 63 013 9928</p>
+                <div class="social-icons">
+                    <a href="https:/https://github.com/ChristionMush/"><i class="fab fa-github"></i></a>
+                    <a href="https:/www.linkedin.com/in/christion-mushariwa-3702aa214"><i class="fab fa-linkedin"></i></a>
+                    <!--<a href="https:/facebook.com/"><i class="fab fa-facebook"></i></a>-->
+                </div>
+                <a href="./Christion Mushariwa-CV.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message" ></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>copyright © Christion Mushariwa.</p>
+    </div>
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxtzeUM_ZByFUFNyB_BncRJLbTfdQoUTRvYVeOUB0D3rT-pC0OxSANYdRShLAfO9ZXpgA/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
